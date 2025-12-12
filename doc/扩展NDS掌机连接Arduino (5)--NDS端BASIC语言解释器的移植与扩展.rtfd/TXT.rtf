@@ -1,0 +1,822 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fnil\fcharset0 Verdana;\f2\fswiss\fcharset0 Helvetica;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue233;\red35\green35\blue135;\red229\green0\blue28;
+\red60\green82\blue240;\red25\green0\blue255;\red30\green0\blue255;\red38\green38\blue38;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs28 \cf0 \'d3\'c9\'d3\'da\'ba\'b8\'bd\'d3\'b9\'a4\'be\'df\'c3\'bb\'bb\'b9\'c3\'bb\'b5\'bd\'ce\'bb\'a3\'ac\'d3\'da\'ca\'c7\'d7\'ee\'bd\'fc\'bc\'b8\'c6\'aa\'ce\'c4\'d5\'c2\'d6\'f7\'d2\'aa\'d2\'d4\'b7\'bd\'b0\'b8\'cf\'b8\'bb\'af\'d3\'eb\'c8\'ed\'bc\'fe\'bf\'aa\'b7\'a2\'ce\'aa\'d6\'f7\'a1\'a3\'bd\'f1\'cc\'ec\'d5\'e2\'c6\'aa\'ce\'c4\'d5\'c2\'d6\'f7\'d2\'aa\'d7\'f6\'d2\'bb\'bc\'fe\'b1\'c8\'bd\'cf\'d3\'d0\'d2\'e2\'d2\'e5\'b5\'c4\'ca\'c2\'c7\'e9\'a3\'ba
+\f1 NDS
+\f0 \'b6\'cb
+\f1 BASIC
+\f0 \'d3\'ef\'d1\'d4\'bd\'e2\'ca\'cd\'c6\'f7\'b5\'c4\'d2\'c6\'d6\'b2\'d3\'eb\'c0\'a9\'d5\'b9\'a1\'a3\'ce\'c4\'d5\'c2\'b8\'bd\'c9\'cf\'c1\'cb\'d2\'c6\'d6\'b2\'ba\'f3\'c8\'ed\'bc\'fe\'b5\'c4\'d4\'cb\'d0\'d0\'bd\'d8\'cd\'bc\'ba\'cd\'ca\'b5\'bb\'fa\'d4\'cb\'d0\'d0\'d0\'a7\'b9\'fb\'a3\'ac\'b2\'a2\'d4\'da\'ce\'c4\'d5\'c2\'d7\'ee\'ba\'f3\'b8\'bd\'c9\'cf\'b9\'a4\'b3\'cc\'b4\'fa\'c2\'eb\'a3\'ac\'b7\'bd\'b1\'e3\'cf\'c2\'d4\'d8\'a1\'a3\'cb\'b3\'b1\'e3\'b4\'f2\'b8\'f6\'b9\'e3\'b8\'e6\'a3\'ba\'d3\'d0\'d0\'cb\'c8\'a4\'b5\'c4\'c5\'f3\'d3\'d1\'bf\'c9\'d2\'d4\'bc\'d3\'c8\'eb
+\f1 QQ
+\f0 \'c8\'ba\'a3\'ba
+\f1 362445156 
+\f0 \'a3\'a8
+\f1 Arduino
+\f0 \'bc\'ab\'bf\'cd\'c8\'ba\'a3\'a9\'a1\'a3
+\f1 \
+\
+\pard\pardeftab720
+
+\f0\b\fs32 \cf0 \'d2\'bb\'a1\'a2\'ce\'aa\'ca\'b2\'c3\'b4\'d2\'aa\'d2\'c6\'d6\'b2\'ba\'cd\'c0\'a9\'d5\'b9
+\f1 BASIC
+\f0 \'d3\'ef\'d1\'d4\'bd\'e2\'ca\'cd\'c6\'f7\'a3\'bf
+\f1\b0\fs28 \
+\
+\pard\pardeftab720
+
+\f0 \cf0 \'b5\'bd\'c4\'bf\'c7\'b0\'ce\'aa\'d6\'b9\'a3\'ac\'cb\'f9\'d3\'d0\'b5\'c4
+\f1 NDS
+\f0 \'d3\'b2\'bc\'fe\'c0\'a9\'d5\'b9\'a3\'ac\'b0\'fc\'c0\'a8
+\f1 DS brut
+\f0 \'d4\'da\'c4\'da\'b6\'bc\'d6\'bb\'cc\'e1\'b9\'a9
+\f1 SDK
+\f0 \'c8\'ed\'bc\'fe\'bf\'aa\'b7\'a2\'bf\'e2\'a1\'a3\'d5\'e2\'ca\'b9\'b5\'c3\'c4\'e3\'d2\'aa\'bd\'f8\'d0\'d0\'b6\'fe\'b4\'ce\'bf\'aa\'b7\'a2\'a3\'ac\'b1\'d8\'d0\'eb\'bb\'a8\'b4\'f3\'c1\'bf\'ca\'b1\'bc\'e4\'c8\'a5\'bf\'b4
+\f1 SDK
+\f0 \'b5\'c4\'ce\'c4\'b5\'b5\'c9\'f5\'d6\'c1\'b4\'fa\'c2\'eb\'a3\'ac\'b9\'a4\'d7\'f7\'c1\'bf\'bf\'aa\'cf\'fa\'bd\'cf\'b4\'f3\'a1\'a3\'cc\'d8\'b1\'f0\'ca\'c7\'d2\'d4\'cf\'c2\'c1\'bd\'b8\'f6\'ce\'ca\'cc\'e2\'a3\'ba
+\f1 (a). 
+\f0 \'b6\'d4\'d3\'da\'cf\'eb\'bd\'f8\'d0\'d0\'bf\'ec\'cb\'d9\'b2\'e2\'ca\'d4\'d2\'bb\'b8\'f6\'cd\'e2\'c9\'e8\'b5\'c4\'bf\'aa\'b7\'a2\'c8\'cb\'d4\'b1\'c0\'b4\'cb\'b5\'a3\'ac\'d4\'c4\'b6\'c1\'ce\'c4\'b5\'b5\'a3\'ac\'d4\'b4\'c2\'eb\'a3\'ac\'d2\'d4\'bc\'b0\'d4\'da\'b4\'cb\'bb\'f9\'b4\'a1\'c9\'cf\'bd\'f8\'d0\'d0\'d7\'d4\'d0\'d0\'bf\'aa\'b7\'a2\'b3\'cc\'d0\'f2\'b5\'f7\'ca\'d4\'b3\'cc\'d0\'f2\'b5\'c4\'ca\'b1\'bc\'e4\'bb\'e1\'b1\'c8\'bd\'cf\'b6\'e0\'a1\'a3
+\f1 (b). 
+\f0 \'c8\'e7\'b9\'fb\'d0\'e8\'d2\'aa\'bf\'d8\'d6\'c6\'c1\'ed\'d2\'bb\'b8\'f6\'cd\'e2\'c9\'e8\'bb\'f2\'b5\'f7\'d5\'fb\'c8\'ed\'bc\'fe\'b9\'a6\'c4\'dc\'ca\'b1\'a3\'ac\'b1\'d8\'d0\'eb\'d6\'d8\'d0\'c2\'b1\'e0\'d2\'eb\'b3\'cc\'d0\'f2\'a3\'ac\'b2\'a2\'bd\'ab\'b3\'cc\'d0\'f2\'b8\'b4\'d6\'c6\'b5\'bd
+\f1 NDS
+\f0 \'b5\'c4\'c9\'d5\'c2\'bc\'bf\'a8\'c4\'da\'a1\'a3\'d2\'f2\'b4\'cb\'a3\'ac\'b9\'a4\'d0\'f2\'b6\'e0\'c1\'cb\'ba\'dc\'b6\'e0\'b2\'bd\'d6\'e8\'a1\'a3
+\f1 \
+\
+BASIC
+\f0 \'d3\'ef\'d1\'d4\'d4\'da\'b5\'ae\'c9\'fa\'d6\'ae\'b3\'f5\'be\'cd\'d2\'d4\'bc\'f2\'b5\'a5\'d2\'d7\'d3\'c3\'ce\'aa\'d5\'dc\'d1\'a7\'d6\'b8\'b5\'bc\'a1\'a3\'ce\'d2\'bd\'ab\'b1\'fc\'b3\'d6\'b8\'c3\'d6\'b8\'b5\'bc\'cb\'bc\'cf\'eb\'c0\'b4\'d7\'f6\'ce\'aa\'b1\'be\'b7\'bd\'b0\'b8\'b5\'c4
+\f1 Demo
+\f0 \'bc\'bc\'ca\'f5\'d1\'dd\'ca\'be\'a1\'a3\'c8\'e7\'b9\'fb\'c4\'dc\'bd\'ab
+\f1 BASIC
+\f0 \'d3\'ef\'d1\'d4\'b5\'c4\'bd\'e2\'ca\'cd\'c6\'f7\'d2\'c6\'d6\'b2\'b5\'bd
+\f1 NDS
+\f0 \'c9\'cf\'a3\'ac\'bd\'ab\'d3\'d0\'c8\'e7\'cf\'c2\'d3\'c5\'b5\'e3\'a3\'ba
+\f1 \
+
+\f0 \'a3\'a8
+\f1 1
+\f0 \'a3\'a9\'c0\'fb\'d3\'c3
+\f1 NDS
+\f0 \'b5\'c4\'b4\'a5\'c6\'c1\'bf\'c9\'d2\'d4\'d7\'f7\'ce\'aa\'d7\'d6\'b7\'fb\'ca\'e4\'c8\'eb\'c9\'e8\'b1\'b8\'a3\'ac\'d0\'a7\'c2\'ca\'ba\'dc\'b8\'df\'a1\'a3
+\f1 \
+
+\f0 \'a3\'a8
+\f1 2
+\f0 \'a3\'a9\'d3\'c3
+\f1 BASIC
+\f0 \'d3\'ef\'d1\'d4\'b1\'e0\'d0\'b4\'b3\'cc\'d0\'f2\'a3\'ac\'b7\'c7\'b3\'a3\'c8\'dd\'d2\'d7\'a3\'ac\'bc\'b8\'ba\'f5\'b2\'bb\'d3\'c3\'d1\'a7\'cf\'b0\'a3\'ac\'b6\'f8\'c7\'d2\'b3\'cc\'d0\'f2\'d2\'bb\'b0\'e3\'bc\'f2\'b6\'cc\'d2\'d7\'b6\'ae\'a1\'a3
+\f1 \
+
+\f0 \'a3\'a8
+\f1 3
+\f0 \'a3\'a9\'cd\'a8\'b9\'fd
+\f1 BASIC
+\f0 \'d3\'ef\'d1\'d4\'b7\'bd\'b1\'e3\'bf\'ec\'bd\'dd\'b5\'c4\'d0\'b4\'b3\'cc\'d0\'f2\'a3\'ac\'bf\'c9\'d2\'d4\'c1\'a2\'b8\'cb\'bc\'fb\'d3\'b0\'a3\'ac\'c2\'ed\'c9\'cf\'bf\'b4\'b5\'bd\'d6\'b4\'d0\'d0\'d0\'a7\'b9\'fb\'a3\'ac\'ce\'de\'d0\'e8\'d4\'da
+\f1 SDK
+\f0 \'c9\'cf\'bd\'f8\'d0\'d0\'d4\'d9\'bf\'aa\'b7\'a2\'a3\'ac\'c3\'f7\'cf\'d4\'cc\'e1\'b8\'df\'bf\'aa\'b7\'a2\'d0\'a7\'c2\'ca\'a1\'a3\'d5\'e2\'bd\'e2\'be\'f6\'c1\'cb\'c9\'cf\'ca\'f6\'b5\'c4\'ce\'ca\'cc\'e2
+\f1 (a).\
+
+\f0 \'a3\'a8
+\f1 4
+\f0 \'a3\'a9\'cd\'a8\'b9\'fd\'c0\'a9\'d5\'b9
+\f1 BASIC
+\f0 \'bd\'e2\'ca\'cd\'c6\'f7\'a3\'ac\'ce\'aa\'c6\'e4\'bc\'d3\'c8\'eb\'b6\'d4
+\f1 DLDI
+\f0 \'a3\'a8\'d4\'da\'b8\'f7
+\f1 NDS
+\f0 \'c9\'d5\'c2\'bc\'bf\'a8\'ca\'b5\'cf\'d6\'cd\'b3\'d2\'bb\'b5\'c4\'ce\'c4\'bc\'fe\'b6\'c1\'d0\'b4\'b9\'a6\'c4\'dc\'a3\'a9\'b5\'c4\'d6\'a7\'b3\'d6\'a3\'ac\'bf\'c9\'d2\'d4\'d6\'b1\'bd\'d3\'d4\'da
+\f1 NDS
+\f0 \'c9\'cf\'bd\'ab\'b1\'e0\'ba\'c3\'b5\'c4\'b3\'cc\'d0\'f2\'d0\'b4\'c8\'eb\'c9\'d5\'c2\'bc\'bf\'a8\'b5\'c4
+\f1 SD
+\f0 \'bf\'a8\'b5\'c4\'ce\'c4\'bc\'fe\'c4\'da\'a3\'ac\'d2\'b2\'bf\'c9\'d2\'d4\'d6\'b1\'bd\'d3\'b4\'d3
+\f1 SD
+\f0 \'bf\'a8\'c4\'da\'bd\'ab\'b3\'cc\'d0\'f2\'ce\'c4\'bc\'fe\'b6\'c1\'c8\'eb\'c4\'da\'b4\'e6\'a1\'a3\'d5\'e2\'bd\'e2\'be\'f6\'c1\'cb\'c9\'cf\'ca\'f6\'b5\'c4\'ce\'ca\'cc\'e2
+\f1 (b).\
+\
+
+\f0 \'b5\'b1\'c8\'bb\'c3\'bb\'d3\'d0\'d2\'bb\'b8\'f6\'b7\'bd\'b0\'b8\'ca\'c7\'ca\'ae\'c8\'ab\'ca\'ae\'c3\'c0\'b5\'c4\'a3\'ac\'cf\'e0\'b1\'c8\'d6\'b1\'bd\'d3\'d4\'da
+\f1 SDK
+\f0 \'c9\'cf\'bf\'aa\'b7\'a2\'a3\'ac\'c0\'fb\'d3\'c3
+\f1 BASIC
+\f0 \'bd\'e2\'ca\'cd\'c6\'f7\'b5\'c4\'c8\'b1\'b5\'e3\'ca\'c7\'a3\'ac\'b3\'cc\'d0\'f2\'d4\'cb\'d0\'d0\'cb\'d9\'b6\'c8\'c3\'bb\'d3\'d0\'c7\'b0\'d5\'df\'bf\'ec\'a1\'a3\'d2\'f2\'b4\'cb\'b2\'bb\'ca\'ca\'ba\'cf\'d7\'f7\'d2\'bb\'d0\'a9\'b6\'d4\'cd\'e2\'c9\'e8
+\f1 SPI
+\f0 \'bb\'d8\'b4\'ab\'ca\'fd\'be\'dd\'cf\'ec\'d3\'a6\'cb\'d9\'b6\'c8\'d2\'aa\'c7\'f3\'ba\'dc\'b8\'df\'b5\'c4\'b3\'a1\'ba\'cf\'a1\'a3\'b1\'c8\'c8\'e7\'cf\'eb\'b0\'d1
+\f1 NDS
+\f0 \'d7\'f6\'b3\'c9\'d2\'bb\'b8\'f6\'c2\'df\'bc\'ad\'b7\'d6\'ce\'f6\'d2\'c7\'a1\'a3
+\f1 \
+\
+\pard\pardeftab720
+
+\f0\b\fs32 \cf0 \'b6\'fe\'a1\'a2\'d2\'c6\'d6\'b2
+\f1 BASIC
+\f0 \'d3\'ef\'d1\'d4\'bd\'e2\'ca\'cd\'c6\'f7
+\f1\b0\fs28 \
+\
+\pard\pardeftab720
+
+\f0 \cf0 \'d2\'aa\'d2\'c6\'d6\'b2
+\f1 BASIC
+\f0 \'bd\'e2\'ca\'cd\'c6\'f7\'a3\'ac\'c4\'c7\'c3\'b4\'be\'cd\'b5\'c3\'d1\'a1\'d4\'f1\'d2\'bb\'b8\'f6\'c4\'bf\'b1\'ea\'bd\'f8\'d0\'d0\'d2\'c6\'d6\'b2\'a1\'a3\'d4\'e7\'d4\'da
+\f1 2007
+\f0 \'c4\'ea\'a3\'ac\'be\'cd\'d2\'d1\'be\'ad\'d3\'d0\'d2\'bb\'ce\'bb\'cd\'f8\'c3\'fb\'bd\'d0
+\f1\b\fs26 zzo38computer
+\f0\b0\fs28 \'b5\'c4\'cd\'e2\'b9\'fa\'d3\'d1\'c8\'cb\'d7\'f6\'c1\'cb\'d5\'e2\'b8\'f6\'b9\'a4\'d7\'f7\'a3\'ac\'cf\'ee\'c4\'bf\'c3\'fb\'b3\'c6\'ce\'aa{\field{\*\fldinst{HYPERLINK "http://dev-scene.com/NDS/DSBasic"}}{\fldrslt 
+\f1 \cf2 \ul \ulc2 DSBasic}}\'a1\'a3\'cb\'fb\'d3\'c3\'c0\'b4\'d2\'c6\'d6\'b2\'b5\'c4
+\f1 BASIC
+\f0 \'bd\'e2\'ca\'cd\'c6\'f7\'d4\'b4\'c2\'eb\'d3\'c3
+\f1 C
+\f0 \'d3\'ef\'d1\'d4\'b1\'e0\'d0\'b4\'a3\'ac\'d2\'f2\'b4\'cb\'b1\'c8\'bd\'cf\'c8\'dd\'d2\'d7\'d2\'c6\'d6\'b2\'a3\'ac\'d6\'bb\'d0\'e8\'d2\'aa\'cc\'ed\'bc\'d3\'c1\'cb
+\f1 NDS
+\f0 \'b5\'c4\'c8\'ed\'bc\'fc\'c5\'cc\'b5\'c8\'b9\'a6\'c4\'dc\'a1\'a3\'c1\'ed\'cd\'e2\'a3\'ac\'cd\'f8\'c9\'cf\'c1\'f7\'b4\'ab\'c9\'f5\'b9\'e3\'b5\'c4\'bf\'aa\'d4\'b4
+\f1 BASIC
+\f0 \'bd\'e2\'ca\'cd\'c6\'f7\'d4\'b4\'c2\'eb\'b0\'e6\'b1\'be\'d2\'b2\'b1\'c8\'bd\'cf\'b6\'e0\'a3\'ac\'b1\'c8\'bd\'cf\'d3\'d0\'c3\'fb\'b5\'c4\'be\'cd\'ca\'c7
+\f1 Tiny Basic
+\f0 \'a1\'a3\'d5\'e2\'b8\'f6
+\f1 Tiny Basic
+\f0 \'cb\'b5\'c0\'b4\'bb\'b0\'b3\'a4\'a3\'ac\'d7\'ee\'d4\'e7\'bf\'c9\'d2\'d4\'cb\'b5\'b5\'bd
+\f1 1975
+\f0 \'c4\'ea\'a1\'a3\'d5\'e2\'c0\'ef\'ce\'d2\'c3\'c7\'d6\'f7\'d2\'aa\'bd\'b2\'d2\'bb\'cf\'c2\'ce\'d2\'b2\'c9\'d3\'c3\'b5\'c4\'b4\'fa\'c2\'eb\'a3\'ac\'c0\'b4\'d7\'d4{\field{\*\fldinst{HYPERLINK "http://www.staff.city.ac.uk/afl/tinybasic/downloads.html"}}{\fldrslt 
+\f1 \cf2 \ul \ulc2 TinyBASIC 2}}\'d2\'b2\'b2\'c9\'d3\'c3\'b5\'c4\'ba\'cb\'d0\'c4\'b4\'fa\'c2\'eb
+\f1\b \cf3 BAS-INT.C
+\f0\b0 \cf0 \'d5\'e2\'b8\'f6\'ce\'c4\'bc\'fe\'a1\'a3
+\f1 \
+\
+
+\f0 \'be\'ad\'b9\'fd\'b2\'e9\'bf\'b4\'d4\'b4\'c2\'eb\'b7\'a2\'cf\'d6\'a3\'ac\'d4\'ad\'c0\'b4{\field{\*\fldinst{HYPERLINK "http://dev-scene.com/NDS/DSBasic"}}{\fldrslt 
+\f1 \cf2 \ul \ulc2 DSBasic}}\'d2\'b2\'ca\'c7\'bb\'f9\'d3\'da\'d5\'e2\'b8\'f6\'b0\'e6\'b1\'be\'b5\'c4\'b4\'fa\'c2\'eb\'bd\'f8\'d0\'d0\'c0\'a9\'d5\'b9\'b5\'c4\'a1\'a3\'b6\'f8{\field{\*\fldinst{HYPERLINK "http://www.staff.city.ac.uk/afl/tinybasic/downloads.html"}}{\fldrslt 
+\f1 \cf2 \ul \ulc2 TinyBASIC 2}}\'b5\'c4\'b9\'a6\'c4\'dc\'b8\'fc\'bc\'d3\'c7\'bf\'b4\'f3\'a3\'ac\'bb\'b9\'d6\'a7\'b3\'d6\'bb\'ad\'cd\'bc\'c3\'fc\'c1\'ee\'a3\'a8\'d0\'e8
+\f1 SDL
+\f0 \'bf\'e2\'d6\'a7\'b3\'d6\'a3\'ac\'b2\'bb\'b9\'fd
+\f1 SDL
+\f0 \'bf\'e2\'bf\'aa\'d4\'b4\'c7\'d2\'bf\'e7\'c6\'bd\'cc\'a8\'a3\'a9\'a1\'a3\'b6\'ee\'cd\'e2\'d2\'bb\'cc\'e1\'a3\'ba\'d7\'d4\'bc\'ba\'d3\'c3
+\f1 C/C++
+\f0 \'d0\'b4\'b8\'f6
+\f1 BASIC
+\f0 \'bd\'e2\'ca\'cd\'c6\'f7\'b2\'bb\'c4\'d1\'a3\'ac\'cd\'f8\'c9\'cf\'d2\'b2\'d3\'d0\'b2\'bb\'c9\'d9\'ce\'c4\'d5\'c2\'bd\'e9\'c9\'dc\'a3\'ac\'c7\'eb
+\f1 google
+\f0 \'d6\'ae\'a1\'a3
+\f1 \
+\
+
+\f0 \'cf\'c2\'d4\'d8\'c1\'cb{\field{\*\fldinst{HYPERLINK "http://www.staff.city.ac.uk/afl/tinybasic/downloads.html"}}{\fldrslt 
+\f1 \cf2 \ul \ulc2 TinyBASIC 2}}\'d4\'b4\'c2\'eb\'ba\'f3\'a3\'ac\'b2\'e9\'bf\'b4
+\f1 BAS-INT.C
+\f0 \'ce\'c4\'bc\'fe\'a3\'ac\'b8\'c3\'ce\'c4\'bc\'fe\'b2\'c9\'d3\'c3\'c1\'cb\'bd\'cf\'d4\'e7\'b5\'c4
+\f1 C
+\f0 \'d3\'ef\'d1\'d4\'d3\'ef\'b7\'a8\'a1\'a3\'d3\'da\'ca\'c7\'ca\'d7\'cf\'c8\'d0\'de\'b8\'c4\'d3\'ef\'b7\'a8\'a3\'ac\'c8\'bb\'ba\'f3\'d3\'c3
+\f1 gcc
+\f0 \'d4\'da\'ce\'d2\'b5\'c4
+\f1 Mac OS X
+\f0 \'cf\'c2\'cb\'b3\'c0\'fb\'b1\'e0\'d2\'eb\'cd\'a8\'b9\'fd\'a3\'ac\'ca\'d4\'d7\'c5\'d4\'cb\'d0\'d0\'c1\'cb\'bc\'b8\'b8\'f6\'b8\'bd\'b4\'f8\'b5\'c4
+\f1 BASIC
+\f0 \'b3\'cc\'d0\'f2\'c0\'fd\'d7\'d3\'a3\'ac\'d2\'bb\'c7\'d0\'cb\'b3\'c0\'fb\'a1\'a3
+\f1 \
+\
+
+\f0 \'bd\'d3\'cf\'c2\'c0\'b4\'b1\'e3\'ca\'c7\'bd\'ab\'b4\'fa\'c2\'eb\'d2\'c6\'d6\'b2\'b5\'bd
+\f1 NDS
+\f0 \'c9\'cf\'a1\'a3\'d3\'c9\'d3\'da
+\f1 devkitPro
+\f0 \'b2\'a2\'c3\'bb\'d3\'d0\'cc\'e1\'b9\'a9\'cc\'ab\'b6\'e0\'b5\'c4\'bb\'f9\'d3\'da\'c3\'fc\'c1\'ee\'d0\'d0\'b5\'c4
+\f1 NDS
+\f0 \'bf\'aa\'b7\'a2\'ca\'be\'c0\'fd\'b3\'cc\'d0\'f2\'a1\'a3\'d2\'f2\'b4\'cb\'d0\'e8\'d2\'aa\'ce\'d2\'bc\'d3\'d2\'bb\'d0\'a9\'d7\'d4\'bc\'ba\'b5\'c4\'b4\'fa\'c2\'eb\'c0\'b4\'ca\'b5\'cf\'d6\'bc\'f2\'b5\'a5\'b5\'c4\'b9\'e2\'b1\'ea\'a1\'a2
+\f1 scanf
+\f0 \'b9\'a6\'c4\'dc\'b5\'c8\'a1\'a3
+\f1 \
+\
+
+\f0 \'d5\'fb\'b8\'f6\'d2\'c6\'d6\'b2\'b9\'fd\'b3\'cc\'be\'cd\'b2\'bb\'cf\'ea\'ca\'f6\'c1\'cb\'a3\'ac\'be\'df\'cc\'e5\'bf\'c9\'d2\'d4\'cf\'c2\'d4\'d8\'ba\'f3\'c3\'e6\'cc\'e1\'b9\'a9\'b5\'c4\'d4\'b4\'c2\'eb\'a1\'a3\'d5\'e2\'c0\'ef\'d6\'f7\'d2\'aa\'bd\'b2\'d2\'bb\'cf\'c2\'a3\'ac\'d2\'c6\'d6\'b2\'b5\'c4\'bc\'b8\'b8\'f6\'d2\'aa\'b5\'e3\'a3\'ba
+\f1 \
+
+\f0 \'a3\'a8
+\f1 1
+\f0 \'a3\'a9\'cc\'ed\'bc\'d3\'b9\'e2\'b1\'ea\'a1\'a3\'ce\'d2\'bc\'f2\'b5\'a5\'b5\'c4\'d3\'c3
+\f1 "\cf4 _\cf0 "
+\f0 \'a3\'ac\'bc\'b4\'cf\'c2\'bb\'ae\'cf\'df\'b4\'fa\'cc\'e6\'b9\'e2\'b1\'ea\'a3\'ac\'b8\'c3\'b9\'e2\'b1\'ea\'ba\'dc\'bc\'f2\'b5\'a5\'a3\'ac\'b2\'bb\'bb\'e1\'c9\'c1\'cb\'b8\'a3\'ac\'b5\'ab\'bb\'f9\'b1\'be\'b4\'ef\'b5\'bd\'ca\'b9\'d3\'c3\'b5\'c4\'c4\'bf\'b1\'ea\'a3\'ac\'b3\'fd\'c1\'cb\'d2\'bb\'b8\'f6\'d0\'a1
+\f1 BUG
+\f0 \'a3\'ba\'ca\'e4\'c8\'eb\'ce\'c4\'d7\'d6\'b5\'bd\'d0\'d0\'c4\'a9\'ca\'b1\'a3\'ac\'bb\'e1\'d7\'d4\'b6\'af\'cc\'f8\'b5\'bd\'b1\'be\'d0\'d0\'d0\'d0\'ca\'d7\'a3\'ac\'b6\'f8\'b2\'bb\'ca\'c7\'cf\'c2\'d2\'bb\'d0\'d0\'a1\'a3\'b5\'ab\'b8\'c3
+\f1 Bug
+\f0 \'b2\'bb\'d3\'b0\'cf\'ec\'ca\'e4\'c8\'eb\'b5\'c4\'b4\'fa\'c2\'eb\'a1\'a3
+\f1 \
+
+\f0 \'a3\'a8
+\f1 2
+\f0 \'a3\'a9\'cc\'ed\'bc\'d3
+\f1 int get_input_number()
+\f0 \'ba\'af\'ca\'fd\'ca\'b5\'cf\'d6
+\f1 INPUT
+\f0 \'c3\'fc\'c1\'ee\'b5\'c4\'d2\'c6\'d6\'b2\'a1\'a3\'d2\'f2\'ce\'aa\'ce\'d2\'ca\'b9\'d3\'c3\'b4\'a5\'c6\'c1\'c8\'ed\'bc\'fc\'c5\'cc\'ba\'f3\'a3\'ac
+\f1 NDS
+\f0 \'b2\'bb\'d6\'a7\'b3\'d6
+\f1 scanf()
+\f0 \'ba\'af\'ca\'fd\'b4\'d3\'c6\'c1\'c4\'bb\'bb\'f1\'b5\'c3\'ca\'e4\'c8\'eb\'a1\'a3
+\f1 \
+
+\f0 \'a3\'a8
+\f1 3
+\f0 \'a3\'a9\'cc\'ed\'bc\'d3
+\f1 "\cf5 RUN\cf0 "
+\f0 \'ba\'cd
+\f1 "\cf5 !\cf0 "
+\f0 \'c1\'bd\'cc\'f5\'c3\'fc\'c1\'ee\'c0\'b4\'d4\'cb\'d0\'d0\'b3\'cc\'d0\'f2\'a1\'a3\'d3\'c9\'d3\'da
+\f1 BAS-INT.C
+\f0 \'d4\'cb\'d0\'d0\'b3\'cc\'d0\'f2\'ca\'c7\'d4\'da\'c3\'fc\'c1\'ee\'d0\'d0\'bd\'ab\'d0\'e8\'d2\'aa\'d6\'b4\'d0\'d0\'b5\'c4
+\f1 BASIC
+\f0 \'b3\'cc\'d0\'f2\'d7\'f7\'ce\'aa\'c3\'fc\'c1\'ee\'d0\'d0\'b2\'ce\'ca\'fd\'bd\'f8\'d0\'d0\'b5\'f7\'d3\'c3\'d6\'b4\'d0\'d0\'b5\'c4\'a3\'ac\'d2\'f2\'b4\'cb\'b2\'bb\'d6\'a7\'b3\'d6\'b3\'cc\'d0\'f2\'b1\'e0\'bc\'ad\'b9\'a6\'c4\'dc\'a1\'a3\'b6\'f8\'d4\'da
+\f1 NDS
+\f0 \'c9\'cf\'ce\'d2\'cc\'ed\'bc\'d3\'c1\'cb\'d2\'bb\'b8\'f6\'b7\'c7\'b3\'a3\'bc\'f2\'b5\'a5\'b5\'c4\'b3\'cc\'d0\'f2\'ca\'e4\'c8\'eb\'b9\'a6\'c4\'dc\'a3\'a8\'b0\'fc\'c0\'a8\'c9\'cf\'c3\'e6\'cc\'e1\'b5\'bd\'b5\'c4\'b9\'e2\'b1\'ea\'a3\'a9\'a1\'a3
+\f1 \
+\
+
+\f0 \'cd\'bc
+\f1 1
+\f0 \'ce\'aa\'d2\'c6\'d6\'b2\'b3\'c9\'b9\'a6\'ba\'f3\'b5\'c4\'d4\'cb\'d0\'d0\'d0\'a7\'b9\'fb\'a1\'a3\'cf\'c2\'ce\'c4\'bd\'ab\'b8\'c3\'d2\'c6\'d6\'b2\'b5\'bd
+\f1 NDS
+\f0 \'b5\'c4
+\f1 BASIC
+\f0 \'bd\'e2\'ca\'cd\'c6\'f7\'cf\'ee\'c4\'bf\'bc\'f2\'b3\'c6\'a3\'ba
+\f1 NDSBasic
+\f0 \'a1\'a3
+\f1 \
+\pard\pardeftab720\qc
+\cf0 \
+\pard\pardeftab720\qc
+{\field{\*\fldinst{HYPERLINK "http://album.sina.com.cn/pic/0022hsn1gy6KQBu0ndid4"}}{\fldrslt 
+\f2\fs24 \cf0 {{\NeXTGraphic 0022hsn1gy6KQBu0ndid4&690.png \width5120 \height9540 \noorient
+}¬}}}\pard\pardeftab720\qc
+\cf0 \
+
+\f0 \'cd\'bc
+\f1 1. NDSBasic 
+\f0 \'d4\'cb\'d0\'d0\'d0\'a7\'b9\'fb\'a1\'a3
+\f1 \
+\pard\pardeftab720
+\cf0 \
+
+\f0 \'cd\'bc
+\f1 1
+\f0 \'ce\'aa\'d7\'ee\'b3\'f5\'d6\'b2\'d2\'c6\'b5\'c4\'d4\'cb\'d0\'d0\'bd\'e7\'c3\'e6\'a3\'ac\'cf\'c2\'b7\'bd\'ce\'aa\'b4\'a5\'c6\'c1\'a3\'ac\'cc\'e1\'b9\'a9\'c8\'ed\'bc\'fc\'c5\'cc\'bd\'f8\'d0\'d0\'ca\'e4\'c8\'eb\'a1\'a3\'c9\'cf\'c6\'c1\'ce\'aa\'d7\'d6\'b7\'fb\'d6\'d5\'b6\'cb\'a3\'ac\'ba\'cd
+\f1 DOS
+\f0 \'a3\'ac\'d2\'d4\'bc\'b0
+\f1 Terminal
+\f0 \'c0\'e0\'cb\'c6\'a1\'a3
+\f1 \
+\
+\pard\pardeftab720
+
+\f0\b\fs32 \cf0 \'c8\'fd\'a1\'a2\'c0\'a9\'d5\'b9
+\f1 BASIC
+\f0 \'d3\'ef\'d1\'d4\'bd\'e2\'ca\'cd\'c6\'f7
+\f1\b0\fs28 \
+\
+\pard\pardeftab720
+
+\f0 \cf0 \'b8\'c3
+\f1 BASIC
+\f0 \'bd\'e2\'ca\'cd\'c6\'f7
+\f1  (BAS-INT.C)
+\f0 \'a3\'ac\'cc\'e1\'b9\'a9\'b5\'c4\'c3\'fc\'c1\'ee\'b7\'c7\'b3\'a3\'d3\'d0\'cf\'de\'a3\'ac\'d2\'f2\'b4\'cb\'d0\'e8\'d2\'aa\'d7\'d4\'bc\'ba\'c0\'a9\'d5\'b9\'cc\'ed\'bc\'d3\'d0\'c2\'b5\'c4
+\f1 BASIC
+\f0 \'d3\'ef\'d1\'d4\'c3\'fc\'c1\'ee\'a1\'a3\'d3\'c9\'d3\'da
+\f1 BAS-INT.C
+\f0 \'d4\'b4\'c2\'eb\'b1\'be\'c9\'ed\'b1\'e0\'d0\'b4\'b1\'c8\'bd\'cf\'c7\'e5\'ce\'fa\'a3\'ac\'cc\'ed\'bc\'d3\'d0\'c2\'c3\'fc\'c1\'ee\'b9\'fd\'b3\'cc\'b7\'c7\'b3\'a3\'bc\'f2\'b5\'a5\'a1\'a3\'d6\'bb\'d0\'e8\'d2\'d4\'cf\'c2\'bc\'b8\'b2\'bd\'cd\'ea\'b3\'c9\'d2\'bb\'b8\'f6\'d0\'c2\'c3\'fc\'c1\'ee\'cc\'ed\'bc\'d3\'a3\'ba
+\f1 \
+
+\f0 \'a3\'a8
+\f1 1
+\f0 \'a3\'a9\'b6\'a8\'d2\'e5\'d0\'c2\'c3\'fc\'c1\'ee\'ba\'ea\'a3\'ac\'c8\'e7
+\f1  \cf4 #define SEND	16\cf0 \
+
+\f0 \'a3\'a8
+\f1 2
+\f0 \'a3\'a9\'d4\'da
+\f1 \'a0struct commands 
+\f0 \'bd\'e1\'b9\'b9\'cc\'e5\'d6\'d0\'cc\'ed\'bc\'d3\'c3\'fc\'c1\'ee\'b5\'c4\'d7\'d6\'b7\'fb\'b4\'ae\'a3\'ac\'d2\'d4\'bc\'b0\'b6\'d4\'d3\'a6\'b5\'c4\'b5\'da\'a3\'a8
+\f1 1
+\f0 \'a3\'a9\'b2\'bd\'d6\'d0\'b5\'c4\'ba\'ea\'a3\'ac\'c8\'e7
+\f1 \cf4 "send", SEND,\cf0 \
+
+\f0 \'a3\'a8
+\f1 3
+\f0 \'a3\'a9\'cc\'ed\'bc\'d3\'c3\'fc\'c1\'ee\'b5\'c4\'d6\'b4\'d0\'d0\'ba\'af\'ca\'fd\'c9\'f9\'c3\'f7\'a3\'ac\'d2\'d4\'bc\'b0\'ba\'af\'ca\'fd\'b4\'fa\'c2\'eb\'a3\'ac\'c8\'e7
+\f1 \cf4 void exec_send();\cf0 \
+
+\f0 \'a3\'a8
+\f1 4
+\f0 \'a3\'a9\'d4\'da\'d6\'f7\'ba\'af\'ca\'fd
+\f1  (main)
+\f0 \'b5\'c4
+\f1 switch
+\f0 \'c3\'fc\'c1\'ee\'d6\'d0\'cc\'ed\'bc\'d3\'d0\'c2\'c3\'fc\'c1\'ee\'b5\'c4\'b5\'f7\'d3\'c3\'a3\'ac\'c8\'e7\'a3\'ba
+\f1 	\'a0		\
+			\cf4 case SEND:\cf0 \
+\pard\pardeftab720
+\cf4 				exec_send();\cf0 \
+\cf4 	\'a0			break;\cf0 \
+\
+\pard\pardeftab720
+
+\f0 \cf0 \'c8\'e7\'b9\'fb\'b8\'c3\'c3\'fc\'c1\'ee\'b3\'fd\'c1\'cb\'d2\'bb\'b0\'e3\'b5\'c4\'c2\'df\'bc\'ad\'b4\'a6\'c0\'ed\'cd\'e2\'d0\'e8\'d2\'aa\'d3\'c3\'b5\'bd
+\f1 NDS
+\f0 \'d3\'b2\'bc\'fe\'b5\'c8\'b9\'a6\'c4\'dc\'a3\'ac\'d4\'f2\'bf\'c9\'d4\'da\'b5\'da\'a3\'a8
+\f1 3
+\f0 \'a3\'a9\'b2\'bd\'b4\'fa\'c2\'eb\'d6\'d0\'b5\'f7\'d3\'c3\'cd\'e2\'b2\'bf\'ba\'af\'ca\'fd\'cd\'ea\'b3\'c9\'cf\'e0\'d3\'a6\'b5\'c4\'d3\'b2\'bc\'fe\'b9\'a6\'c4\'dc\'a1\'a3\'d5\'e2\'d1\'f9\'b5\'c4\'c9\'e8\'bc\'c6\'b4\'fa\'c2\'eb\'bf\'c9\'d2\'c6\'d6\'b2\'d0\'d4\'bd\'cf\'ba\'c3\'a3\'ac\'c2\'df\'bc\'ad\'b9\'a6\'c4\'dc\'b4\'fa\'c2\'eb\'ba\'cd\'d3\'b2\'bc\'fe\'cf\'e0\'b9\'d8\'b4\'fa\'c2\'eb\'b7\'d6\'c0\'eb\'a1\'a3
+\f1 \
+\
+
+\f0 \'ce\'d2\'d6\'f7\'d2\'aa\'c0\'a9\'d5\'b9\'cc\'ed\'bc\'d3\'c1\'cb\'d2\'d4\'cf\'c2\'bc\'b8\'cc\'f5\'c3\'fc\'c1\'ee\'a3\'ba
+\f1 \
+
+\f0 \'a3\'a8
+\f1 1
+\f0 \'a3\'a9
+\f1 "\cf5 RUN\cf0 " 
+\f0 \'bb\'f2
+\f1  "\cf5 !\cf0 "
+\f0 \'a3\'ba\'c8\'e7\'c9\'cf\'ce\'c4\'cb\'f9\'ca\'f6\'a1\'a3
+\f1 \
+
+\f0 \'a3\'a8
+\f1 2
+\f0 \'a3\'a9
+\f1 "\cf5 LIST\cf0 "
+\f0 \'a3\'ba\'b4\'f2\'d3\'a1\'c4\'da\'b4\'e6\'c0\'ef\'b5\'c4
+\f1 BASIC
+\f0 \'b4\'fa\'c2\'eb\'b5\'bd\'c6\'c1\'c4\'bb\'c9\'cf\'a1\'a3
+\f1 \
+
+\f0 \'a3\'a8
+\f1 3
+\f0 \'a3\'a9
+\f1 "\cf5 NEW\cf0 "
+\f0 \'a3\'ba\'c7\'e5\'b3\'fd\'c4\'da\'b4\'e6\'c0\'ef\'b5\'c4
+\f1 BASIC
+\f0 \'b4\'fa\'c2\'eb\'a3\'ac\'bf\'aa\'ca\'bc\'b1\'e0\'d0\'b4\'d0\'c2\'b5\'c4\'b3\'cc\'d0\'f2\'b4\'fa\'c2\'eb\'a1\'a3
+\f1 \
+
+\f0 \'a3\'a8
+\f1 4
+\f0 \'a3\'a9
+\f1 "\cf5 ?\cf0 "
+\f0 \'a3\'ba\'ba\'cd
+\f1 PRINT
+\f0 \'c3\'fc\'c1\'ee\'d2\'bb\'d1\'f9\'a3\'ac\'d3\'c3\'d2\'bb\'b8\'f6\'bc\'f2\'b6\'cc\'b5\'c4\'b7\'fb\'ba\'c5\'a3\'ac\'bc\'f5\'c9\'d9\'ca\'e4\'c8\'eb\'ca\'b1\'bc\'e4\'a1\'a3
+\f1 \
+
+\f0 \'a3\'a8
+\f1 5
+\f0 \'a3\'a9
+\f1 "\cf5 SAVE filename\cf0 "
+\f0 \'a3\'ba\'bd\'ab\'b5\'b1\'c7\'b0\'b1\'e0\'bc\'ad\'b5\'c4\'c4\'da\'b4\'e6\'c0\'ef\'b5\'c4\'b4\'fa\'c2\'eb\'b1\'a3\'b4\'e6\'b5\'bd
+\f1 filename
+\f0 \'ce\'c4\'bc\'fe\'d6\'d0\'a1\'a3
+\f1 \
+
+\f0 \'a3\'a8
+\f1 6
+\f0 \'a3\'a9
+\f1 "\cf5 LOAD filename\cf0 "
+\f0 \'a3\'ba\'bd\'ab
+\f1 filename
+\f0 \'ce\'c4\'bc\'fe\'c0\'ef\'b5\'c4\'b4\'fa\'c2\'eb\'b6\'c1\'c8\'eb\'c4\'da\'b4\'e6\'a1\'a3\'bf\'c9\'d2\'d4\'d6\'b1\'bd\'d3\'ca\'e4\'c8\'eb\'c3\'fc\'c1\'ee
+\f1 "RUN"
+\f0 \'bb\'f2
+\f1 "!"
+\f0 \'d4\'cb\'d0\'d0\'a1\'a3
+\f1 \
+
+\f0 \'a3\'a8
+\f1 7
+\f0 \'a3\'a9
+\f1 "\cf5 PSET x,y,clr\cf0 "
+\f0 \'a3\'ba\'bb\'ad\'cf\'f1\'cb\'d8\'a1\'a3\'d4\'da
+\f1  (x,y)
+\f0 \'b4\'a6\'cf\'f1\'cb\'d8\'d3\'c3
+\f1 clr
+\f0 \'ba\'c5\'d1\'d5\'c9\'ab\'b5\'e3\'c1\'c1\'a1\'a3
+\f1 \
+
+\f0 \'a3\'a8
+\f1 8
+\f0 \'a3\'a9
+\f1 "\cf5 LINE x1,y1,x2,y2,clr [,B[F]]\cf0 "
+\f0 \'a3\'ba\'b4\'d3
+\f1 (x1,y1)
+\f0 \'b5\'bd
+\f1 (x2,y2)
+\f0 \'d3\'c3
+\f1 clr
+\f0 \'c9\'ab\'ba\'c5\'bb\'ad\'cf\'df\'a1\'a2\'bb\'ad\'bf\'d5\'d0\'c4\'be\'d8\'d0\'ce\'a1\'a2\'bb\'ad\'ca\'b5\'d0\'c4\'be\'d8\'d0\'ce\'c3\'fc\'c1\'ee\'a1\'a3\'ba\'cd
+\f1 QBASIC
+\f0 \'c0\'ef\'b5\'c4\'cd\'ac\'c3\'fb\'c3\'fc\'c1\'ee\'c0\'e0\'cb\'c6\'a3\'ac\'c7\'f8\'b1\'f0\'ca\'c7\'ce\'d2\'ce\'aa\'c1\'cb\'b7\'bd\'b1\'e3\'c3\'fc\'c1\'ee\'b5\'c4\'ca\'e4\'c8\'eb\'a3\'ac\'bd\'ab
+\f1 QBASIC
+\f0 \'d3\'ef\'b7\'a8\'d6\'d0\'b5\'c4
+\f1 y1
+\f0 \'ba\'cd
+\f1 x2
+\f0 \'d6\'ae\'bc\'e4\'b5\'c4
+\f1 "-"
+\f0 \'b8\'c4\'ce\'aa\'c1\'cb\'b6\'ba\'ba\'c5
+\f1 ","
+\f0 \'a1\'a3\'c1\'ed\'cd\'e2\'a3\'ac
+\f1 clr
+\f0 \'b4\'fa\'b1\'ed
+\f1 NDSBasic
+\f0 \'d6\'d0\'b5\'c4\'d1\'d5\'c9\'ab\'ba\'c5\'a3\'a8\'d4\'a4\'b6\'a8\'d2\'e5\'a3\'a9\'a3\'ac
+\f1 "B"
+\f0 \'b4\'fa\'b1\'ed\'bb\'ad\'bf\'d5\'d0\'c4\'be\'d8\'d0\'ce\'a3\'ac
+\f1 "BF"
+\f0 \'b4\'fa\'b1\'ed\'bb\'ad\'ca\'b5\'d0\'c4\'be\'d8\'d0\'ce\'a1\'a3
+\f1 \
+
+\f0 \'a3\'a8
+\f1 9
+\f0 \'a3\'a9
+\f1 "\cf5 CIRCLE x,y,r,clr\cf0 "
+\f0 \'a3\'ba\'bb\'ad\'d4\'b2\'c3\'fc\'c1\'ee\'a1\'a3
+\f1 x,y
+\f0 \'b4\'fa\'b1\'ed\'d4\'b2\'d0\'c4\'a3\'ac
+\f1 clr
+\f0 \'ce\'aa\'d1\'d5\'c9\'ab\'ba\'c5\'a1\'a3
+\f1 \
+
+\f0 \'a3\'a8
+\f1 10
+\f0 \'a3\'a9
+\f1 "\cf5 DELAY ms\cf0 "
+\f0 \'a3\'ba\'b3\'cc\'d0\'f2\'d1\'d3\'b3\'d9
+\f1 ms
+\f0 \'ba\'c1\'c3\'eb\'a1\'a3
+\f1 \
+
+\f0 \'a3\'a8
+\f1 11
+\f0 \'a3\'a9
+\f1 "\cf5 SEND\cf0 "
+\f0 \'a3\'ba\'b7\'a2\'cb\'cd\'ca\'fd\'be\'dd\'b5\'bd
+\f1 Arduino (Slot 1
+\f0 \'bd\'d3\'bf\'da\'b5\'c4
+\f1 SPI
+\f0 \'cd\'a8\'b5\'c0
+\f1 )
+\f0 \'c9\'cf\'a1\'a3\'ce\'d2\'bd\'ab\'b8\'c3\'c3\'fc\'c1\'ee\'b5\'c4\'d3\'ef\'b7\'a8\'c9\'e8\'bc\'c6\'b3\'c9\'ba\'cd
+\f1 PRINT
+\f0 \'d2\'bb\'d6\'c2\'a3\'ac\'d5\'e2\'d1\'f9\'ca\'b9\'d3\'c3\'c6\'f0\'c0\'b4\'b1\'c8\'bd\'cf\'c1\'e9\'bb\'ee\'a1\'a3
+\f1 \
+
+\f0 \'a3\'a8
+\f1 12
+\f0 \'a3\'a9
+\f1 "\cf5 RECV n\cf0 "
+\f0 \'a3\'ba\'b4\'d3
+\f1 Arduino (Slot 1
+\f0 \'bd\'d3\'bf\'da\'b5\'c4
+\f1 SPI
+\f0 \'cd\'a8\'b5\'c0
+\f1 )
+\f0 \'c9\'cf\'b6\'c1\'c8\'a1
+\f1 n
+\f0 \'b8\'f6\'d7\'d6\'bd\'da\'b5\'c4\'ca\'fd\'be\'dd\'a3\'ac\'b2\'a2\'b4\'f2\'d3\'a1\'b6\'c1\'c8\'a1\'b5\'bd\'b5\'c4\'ca\'fd\'be\'dd\'a1\'a3\'c4\'ac\'c8\'cf\'b5\'b1\'b6\'c1\'c8\'a1\'b9\'fd\'b3\'cc\'d6\'d0\'d3\'f6\'b5\'bd
+\f1 '\cf4 \\0\cf0 '
+\f0 \'d7\'d6\'b7\'fb\'ca\'b1\'d2\'b2\'bb\'e1\'cd\'a3\'d6\'b9\'b6\'c1\'c8\'a1\'a1\'a3
+\f1 \
+
+\f0 \'a3\'a8
+\f1 13
+\f0 \'a3\'a9
+\f1 "\cf5 CLS\cf0 "
+\f0 \'a3\'ba\'c7\'e5\'c6\'c1\'c3\'fc\'c1\'ee\'a1\'a3\'d6\'b4\'d0\'d0\'ca\'b1\'bd\'ab\'c7\'e5\'b3\'fd\'c6\'c1\'c4\'bb\'c4\'da\'cb\'f9\'d3\'d0\'b5\'c4\'b4\'f2\'d3\'a1\'d0\'c5\'cf\'a2\'a1\'a3
+\f1 \
+\
+
+\f0 \'cb\'f9\'d3\'d0\'c3\'fc\'c1\'ee\'b2\'bb\'b7\'d6\'b4\'f3\'d0\'a1\'d0\'b4\'a3\'ac\'bd\'e2\'ca\'cd\'c6\'f7\'c4\'dc\'d7\'d4\'b6\'af\'ca\'b6\'b1\'f0\'a1\'a3\'ca\'b5\'cf\'d6\'b9\'fd\'b3\'cc\'d6\'d0\'a3\'ac
+\f1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf0 {\listtext	\'95	}LINE
+\f0 \'c3\'fc\'c1\'ee\'d3\'c3\'b5\'bd\'c1\'cb\'ce\'d2\'b5\'c4\'bf\'aa\'d4\'b4
+\f1 3D
+\f0 \'d2\'fd\'c7\'e6{\field{\*\fldinst{HYPERLINK "http://sourceforge.net/projects/nomad3d/"}}{\fldrslt 
+\f1 \cf2 \ul \ulc2 Nomad3D}}\'d6\'d0\'b5\'c4\'bb\'ad\'cf\'df\'b4\'fa\'c2\'eb\'a3\'ac\'d6\'a7\'b3\'d6
+\f1 Cohen
+\f0 \'b2\'c3\'bc\'f4\'b9\'a6\'c4\'dc\'a3\'ac\'c7\'d2\'d6\'b4\'d0\'d0\'d0\'d4\'c4\'dc\'b8\'df\'d0\'a7\'a1\'a3
+\f1 \
+{\listtext	\'95	}CIRCLE
+\f0 \'c3\'fc\'c1\'ee\'d4\'f2\'d3\'c3\'b5\'bd\'c1\'cb\'ce\'d2\'b5\'c4\'c1\'ed\'d2\'bb\'c6\'aa\'b2\'a9\'ce\'c4\'a3\'ba{\field{\*\fldinst{HYPERLINK "http://blog.sina.com.cn/s/blog_6f38945b01016q13.html"}}{\fldrslt \cf2 \ul \ulc2 \'bb\'f9\'d3\'da
+\f1 NDS/GBA/ARM
+\f0 \'a3\'ac\'b4\'d3\'c6\'f4\'b6\'af\'b5\'bd\'d4\'cb\'d0\'d0\'c4\'e3\'d7\'d4\'bc\'ba\'b5\'c4\'b5\'da\'d2\'bb\'d0\'d0
+\f1 C
+\f0 \'b3\'cc\'d0\'f2\'b4\'fa\'c2\'eb
+\f1 (NDS
+\f0 \'c6\'aa
+\f1 )}}\'d6\'d0\'b5\'c4\'bb\'ad\'d4\'b2\'cb\'e3\'b7\'a8\'a3\'ac\'d0\'a7\'c2\'ca\'d2\'b2\'ba\'dc\'b8\'df\'a1\'a3
+\f1 \
+{\listtext	\'95	}DELAY
+\f0 \'c3\'fc\'c1\'ee\'ca\'b9\'d3\'c3
+\f1 NDS
+\f0 \'b5\'c4\'b5\'da
+\f1 0
+\f0 \'ba\'c5\'d3\'b2\'bc\'fe\'bc\'c6\'ca\'b1\'c6\'f7
+\f1  (Timer 0)
+\f0 \'ca\'b5\'cf\'d6\'a3\'ac\'be\'ab\'b6\'c8\'b4\'ef\'b5\'bd\'ce\'a2\'c3\'eb\'bc\'b6\'a1\'a3\'b6\'f8\'c7\'d2\'c3\'bf\'b4\'ce\'d3\'c3\'cd\'ea\'be\'cd\'ca\'cd\'b7\'c5\'bc\'c6\'ca\'b1\'c6\'f7\'a3\'ac\'b2\'bb\'d5\'bc\'d3\'c3\'d3\'b2\'bc\'fe\'d7\'ca\'d4\'b4\'a1\'a3
+\f1 \
+{\listtext	\'95	}SEND
+\f0 \'ba\'cd
+\f1 RECV
+\f0 \'c3\'fc\'c1\'ee\'b5\'c4\'ca\'b5\'cf\'d6\'d3\'c3\'b5\'bd\'c1\'cb\'b5\'da\'c8\'fd\'b7\'bd\'bf\'e2\'a3\'ba{\field{\*\fldinst{HYPERLINK "http://www.circuitdb.com/?p=725"}}{\fldrslt 
+\f1 \cf2 \ul \ulc2 libspi-0.2 
+\f0 \'d4\'b4\'c2\'eb}}\'a3\'ac\'d3\'c9\'d3\'da\'d4\'b4\'c2\'eb\'b6\'d4\'d3\'a6\'b5\'c4
+\f1 devkitPro
+\f0 \'b0\'e6\'b1\'be\'cc\'ab\'d4\'e7\'a3\'ac\'d4\'b4\'c2\'eb\'d6\'d0\'d3\'c3\'b5\'c4\'ba\'dc\'b6\'e0\'ba\'ea\'d2\'d1\'be\'ad\'b2\'bb\'b4\'e6\'d4\'da\'bb\'f2\'d3\'eb\'b5\'b1\'c7\'b0\'b0\'e6\'b1\'be\'a3\'a8\'ce\'d2\'d3\'c3\'b5\'c4\'ca\'c7\'d7\'ee\'d0\'c2\'b5\'c4\'b0\'e6\'b1\'be\'a3\'ba
+\f1 devkitARM r42
+\f0 \'a3\'ac
+\f1 libnds-1.5.8
+\f0 \'a3\'a9\'b3\'e5\'cd\'bb\'a1\'a3\'d2\'f2\'b4\'cb\'ce\'d2\'d6\'d8\'d0\'c2\'d0\'de\'b8\'c4\'c1\'cb\'d4\'b4\'c2\'eb\'b2\'a2\'b1\'e0\'d2\'eb\'b3\'c9
+\f1 libspi.a
+\f0 \'bf\'e2\'ce\'c4\'bc\'fe\'b7\'bd\'b1\'e3\'d2\'d4\'ba\'f3\'ca\'b9\'d3\'c3\'a1\'a3
+\f1 \
+\pard\pardeftab720
+
+\f0 \cf0 \'c6\'e4\'d6\'d0
+\f1 SEND
+\f0 \'c3\'fc\'c1\'ee\'ca\'b5\'cf\'d6\'b5\'c4\'d4\'b4\'c2\'eb\'c8\'e7\'cf\'c2\'a3\'ba
+\f1 \
+\pard\pardeftab720
+\cf6 void exec_send()\cf0 \
+\cf6 \{\cf0 \
+\cf6 	//syntax: similar with PRINT\cf0 \
+\cf6 \'a0 int answer;\cf0 \
+\cf6 \'a0 int len=0, spaces;\cf0 \
+\cf6 \'a0 char last_delim;\cf0 \
+\cf6 	char send_str[256];\cf0 \
+\cf6 	char recv_buff[256];\cf0 \
+\cf6 	char temp[50];\cf0 \
+\cf6 	memset(send_str,0,256);\cf0 \
+\cf6 	memset(recv_buff,0,256);\cf0 \
+\cf6 	memset(temp,0,50);\cf0 \
+\cf6 \
+\'a0 do \{\cf0 \
+\cf6 \'a0 \'a0 get_token(); /* get next list item */\cf0 \
+\cf6 \'a0 \'a0 if(tok==EOL || tok==FINISHED) break;\cf0 \
+\cf6 \'a0 \'a0 if(token_type==QUOTE) \{ /* is string */\cf0 \
+\cf6 \'a0 \'a0 \'a0 sprintf(temp,token);\cf0 \
+\cf6 \'a0 \'a0 \'a0 strcat(send_str,temp);\cf0 \
+\cf6 \'a0 \'a0 \'a0 len += strlen(token);\cf0 \
+\cf6 \'a0 \'a0 \'a0 get_token();\cf0 \
+\cf6 \'a0 \'a0 \}\cf0 \
+\cf6 \'a0 \'a0 else \{ /* is expression */\cf0 \
+\cf6 \'a0 \'a0 \'a0 putback();\cf0 \
+\cf6 \'a0 \'a0 \'a0 get_exp(&answer);\cf0 \
+\cf6 \'a0 \'a0 \'a0 get_token();\cf0 \
+\cf6 \'a0 \'a0 \'a0 len += sprintf(temp,"%d", answer);\cf0 \
+\cf6 \'a0 \'a0 \'a0 strcat(send_str,temp);\cf0 \
+\cf6 \'a0 \'a0 \}\cf0 \
+\cf6 \'a0 \'a0 last_delim = *token;\'a0\cf0 \
+\cf6 \
+\'a0 \'a0 if(*token==';') \{\cf0 \
+\cf6 \'a0 \'a0 \'a0 /* compute number of spaces to move to next tab */\cf0 \
+\cf6 \'a0 \'a0 \'a0 spaces = 8 - (len % 8);\'a0\cf0 \
+\cf6 \'a0 \'a0 \'a0 len += spaces; /* add in the tabbing position */\cf0 \
+\cf6 \'a0 \'a0 \'a0 while(spaces) \{\'a0\cf0 \
+\cf6 				sprintf(temp," ");\cf0 \
+\cf6 				strcat(send_str,temp);\cf0 \
+\cf6 \'a0 \'a0 \'a0 \'a0 spaces--;\cf0 \
+\cf6 \'a0 \'a0 \'a0 \}\cf0 \
+\cf6 \'a0 \'a0 \}\cf0 \
+\cf6 \'a0 \'a0 else if(*token==',') /* do nothing */;\cf0 \
+\cf6 \'a0 \'a0 else if(tok!=EOL && tok!=FINISHED) serror(15);\'a0\cf0 \
+\cf6 \'a0 \} while (*token==';' || *token==',');\cf0 \
+\cf6 \
+\'a0 if(tok==EOL || tok==FINISHED)\'a0\cf0 \
+\cf6 \'a0 \{\cf0 \
+\cf6 \'a0 \'a0 if(last_delim != ';' && last_delim!=',')\'a0\cf0 \
+\cf6 \'a0 \'a0 \{\cf0 \
+\cf6 \'a0 \'a0 	sprintf(temp,"\\n");\cf0 \
+\cf6 \'a0 \'a0 	strcat(send_str,temp);\cf0 \
+\cf6 \'a0 \'a0 \}\cf0 \
+\cf6 \'a0 \'a0\'a0\cf0 \
+\cf6 \'a0 \'a0 \'a0do_send(send_str,recv_buff,256);\cf0 \
+\cf6 \'a0 \'a0 \'a0//printf(recv_buff);\cf0 \
+\cf6 \'a0 \}\cf0 \
+\cf6 \'a0 else serror(15); /* error is not , or ; */	\cf0 \
+\cf6 \}\cf0 \
+\cf6 \
+void do_send(char* send_str, char* recv_buff, int max_len)\cf0 \
+\cf6 \{\cf0 \
+\cf6 	int i=0;\cf0 \
+\cf6 	while(send_str[i] && i<= max_len)\cf0 \
+\cf6 	\{\cf0 \
+\cf6 		recv_buff[i] = send_str[i];\cf0 \
+\cf6 		i++;\cf0 \
+\cf6 	\}\cf0 \
+\cf6 		\cf0 \
+\cf6 	recv_buff[i]='\\0';\cf0 \
+\cf6 	\cf0 \
+\cf6 	////////\cf0 \
+\cf6 	int len=strlen(send_str);\cf0 \
+\cf6 	char* p=send_str;\cf0 \
+\cf6 	setupConsecutive_cardSPI(len);\cf0 \
+\cf6 	while(*p)\cf0 \
+\cf6 		writeBlocking_cardSPI(*(p++));\cf0 \
+\cf6 	\cf0 \
+\cf6 \}\cf0 \
+\
+RECV
+\f0 \'c3\'fc\'c1\'ee\'ca\'b5\'cf\'d6\'d4\'b4\'c2\'eb\'a3\'ba
+\f1 \
+\pard\pardeftab720
+\cf7 void exec_recv()\cf0 \
+\cf7 \{\cf0 \
+\cf7 	int num_recv_byte=0;\cf0 \
+\cf7 	int num_byte=0;\cf0 \
+\cf7 	get_exp(&num_byte);\cf0 \
+\cf7 	\cf0 \
+\cf7 	memset(recv_buff,0,MAX_RECV_SIZE);\cf0 \
+\cf7 	\cf0 \
+\cf7 	num_recv_byte = do_recv(recv_buff, num_byte, STOP_CHAR);\cf0 \
+\cf7 	//the variable Z used to store the number of received byte.\cf0 \
+\cf7 	//variables['Z'-'A'] = num_recv_byte;\cf0 \
+\cf7 	\cf0 \
+\cf7 	printf("[received %d byte: %s]\\n", num_recv_byte, recv_buff);\cf0 \
+\cf7 \}\cf0 \
+\cf7 \
+int do_recv(char* buff, int num_byte, char stop_byte)\cf0 \
+\cf7 \{\cf0 \
+\cf7 	u8 read_byte=0;\cf0 \
+\cf7 	int i=0;\cf0 \
+\cf7 	for(i=0; i<num_byte; i++)\cf0 \
+\cf7 	\{\cf0 \
+\cf7 \'a0 	writeBlocking_cardSPI(0x00);\cf0 \
+\cf7 \'a0 	while(readBlocking_cardSPI(&read_byte) != CARD_SPI_STATUS_OK);\cf0 \
+\cf7 \'a0 	\cf0 \
+\cf7 \'a0 	if((char)read_byte == stop_byte)\cf0 \
+\cf7 \'a0 		return i;\cf0 \
+\cf7 \'a0 		\cf0 \
+\cf7 \'a0 	buff[i] = (char)read_byte;\cf0 \
+\cf7 \'a0 \}\cf0 \
+\cf7 \}\cf0 \
+\
+\pard\pardeftab720
+
+\f0 \cf0 \'d7\'ee\'ba\'f3\'a3\'ac\'d2\'f2\'ce\'aa\'cc\'ed\'bc\'d3\'c1\'cb\'bb\'ad\'cd\'bc\'b9\'a6\'c4\'dc\'a3\'ac\'ce\'d2\'bd\'ab\'d6\'d5\'b6\'cb\'b4\'b0\'bf\'da\'b4\'d3\'c9\'cf\'c6\'c1\'d2\'c6\'b5\'bd\'cf\'c2\'c6\'c1\'a3\'ac\'ba\'cd\'c8\'ed\'bc\'fc\'c5\'cc\'b7\'c5\'d4\'da\'d2\'bb\'b8\'f6\'c6\'c1\'c4\'da\'a1\'a3\'d6\'d5\'b6\'cb\'b4\'b0\'bf\'da\'cc\'e1\'b9\'a9
+\f1 14
+\f0 \'d0\'d0\'b4\'fa\'c2\'eb\'cf\'d4\'ca\'be\'a3\'ac\'c9\'cf\'c6\'c1\'c8\'ab\'b2\'bf\'d3\'c3\'c0\'b4\'bb\'ad\'cd\'bc\'a1\'a3\'d7\'ee\'ba\'f3\'d4\'cb\'d0\'d0\'d0\'a7\'b9\'fb\'c8\'e7\'cd\'bc
+\f1 2, 
+\f0 \'cd\'bc
+\f1 3, 
+\f0 \'cd\'bc
+\f1 4
+\f0 \'cb\'f9\'ca\'be\'a1\'a3
+\f1 \
+\
+\pard\pardeftab720\qc
+\cf0 \
+\pard\pardeftab720\qc
+{\field{\*\fldinst{HYPERLINK "http://album.sina.com.cn/pic/0022hsn1gy6KQLPU1NMa2"}}{\fldrslt 
+\f2\fs24 \cf0 {{\NeXTGraphic 0022hsn1gy6KQLPU1NMa2&690.jpg \width4873 \height9080 \noorient
+}¬}}}\pard\pardeftab720\qc
+\cf0 \
+
+\f0 \'cd\'bc
+\f1 2. LINE
+\f0 \'c3\'fc\'c1\'ee\'d6\'b4\'d0\'d0\'d0\'a7\'b9\'fb\'a1\'a3
+\f1 \
+\
+\pard\pardeftab720\qc
+{\field{\*\fldinst{HYPERLINK "http://album.sina.com.cn/pic/0022hsn1gy6KQLZQqr345"}}{\fldrslt 
+\f2\fs24 \cf0 {{\NeXTGraphic 0022hsn1gy6KQLZQqr345&690.jpg \width4873 \height9080 \noorient
+}¬}}}\pard\pardeftab720\qc
+\cf0 \
+
+\f0 \'cd\'bc
+\f1 3. LINE
+\f0 \'a1\'a2
+\f1 CIRCLE
+\f0 \'ba\'cd
+\f1 DELAY
+\f0 \'c3\'fc\'c1\'ee\'d4\'da\'d1\'ad\'bb\'b7\'d6\'d0\'d6\'b4\'d0\'d0\'b5\'c4\'d0\'a7\'b9\'fb\'a1\'a3
+\f1 \
+\
+\pard\pardeftab720\qc
+{\field{\*\fldinst{HYPERLINK "http://album.sina.com.cn/pic/0022hsn1gy6KQMdwoQV01"}}{\fldrslt 
+\f2\fs24 \cf0 {{\NeXTGraphic 0022hsn1gy6KQMq6ZQy1e&690.jpg \width7760 \height13800 \noorient
+}¬}}}\pard\pardeftab720\qc
+\cf0 \
+
+\f0 \'cd\'bc
+\f1 4. 
+\f0 \'ca\'b5\'bb\'fa\'d4\'cb\'d0\'d0\'d0\'a7\'b9\'fb\'a1\'a3
+\f1 \
+\
+\pard\pardeftab720
+
+\f0 \cf0 \'bb\'f9\'d3\'da
+\f1 Slot 1
+\f0 \'bd\'d3\'bf\'da
+\f1 SPI
+\f0 \'cd\'a8\'d0\'c5\'b5\'c4
+\f1 SEND, RECV
+\f0 \'c3\'fc\'c1\'ee\'c3\'bb\'c4\'dc\'ca\'b5\'b2\'e2\'a3\'ac\'b5\'ab\'c4\'a3\'c4\'e2\'c6\'f7\'c9\'cf\'d6\'b4\'d0\'d0\'c0\'b4\'bf\'b4\'d3\'a6\'b8\'c3\'ca\'c7\'b9\'a4\'d7\'f7\'d5\'fd\'c8\'b7\'b5\'c4\'a1\'a3
+\f1 \
+\
+\pard\pardeftab720
+
+\f0\b\fs32 \cf0 \'b4\'fa\'c2\'eb\'cf\'c2\'d4\'d8\'a3\'ba{\field{\*\fldinst{HYPERLINK "http://vdisk.weibo.com/?leftnav=1&wvr=5&type=last&from=new#/NDSBasic"}}{\fldrslt 
+\f1 \cf2 \ul \ulc2 NDSBasic + libspi}}
+\f1\b0\fs28 \
+\
+\pard\pardeftab720
+
+\f0 \cf0 \'ba\'f3\'d0\'f8\'bd\'ab\'cf\'c8\'b2\'e2\'ca\'d4
+\f1 SEND
+\f0 \'ba\'cd
+\f1 RECV
+\f0 \'c3\'fc\'c1\'ee\'a3\'ac\'c8\'bb\'ba\'f3\'cc\'ed\'bc\'d3\'d2\'d4\'cf\'c2\'c3\'fc\'c1\'ee\'a3\'ba
+\f1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls2\ilvl0
+\f2\fs30 \cf8 {\listtext	\'95	}DWRITE pin,value
+\f0 \'a3\'ba\'c9\'e8\'d6\'c3
+\f2 Arduino
+\f0 \'b5\'c4\'b5\'da
+\f2 pin
+\f0 \'ca\'fd\'d7\'d6\'d2\'fd\'bd\'c5\'ce\'aa\'d6\'b5
+\f2 value (1: HIGH
+\f0 \'b8\'df\'b5\'e7\'c6\'bd\'a3\'ac
+\f2 0
+\f0 \'a3\'ba
+\f2 LOW
+\f0 \'b5\'cd\'b5\'e7\'c6\'bd
+\f2 )
+\f0 \'a1\'a3
+\f1\fs28 \cf0 \
+\ls2\ilvl0
+\f2\fs30 \cf8 {\listtext	\'95	}AWRITE pin,value
+\f0 \'a3\'ba\'c9\'e8\'d6\'c3
+\f2 Arduino
+\f0 \'b5\'c4\'b5\'da
+\f2 pin (PWM
+\f0 \'d2\'fd\'bd\'c5
+\f2 )
+\f0 \'ce\'aa\'d6\'b5
+\f2 value (0~255
+\f0 \'d6\'ae\'bc\'e4\'b5\'c4\'d6\'b5\'a3\'ac\'d3\'c3\'d3\'da
+\f2 PWM
+\f0 \'d0\'c5\'ba\'c5
+\f2 )
+\f0 \'a1\'a3
+\f1\fs28 \cf0 \
+\ls2\ilvl0
+\f2\fs30 \cf8 {\listtext	\'95	}DREAD( pin )
+\f0 \'a3\'ba\'b6\'c1\'c8\'a1\'b5\'da
+\f2 pin
+\f0 \'ca\'fd\'d7\'d6\'d2\'fd\'bd\'c5\'b5\'c4\'b5\'e7\'c6\'bd\'d7\'b4\'cc\'ac
+\f2  (1
+\f0 \'a3\'ba\'b8\'df\'b5\'e7\'c6\'bd\'a3\'ac
+\f2 0
+\f0 \'a3\'ba\'b5\'cd\'b5\'e7\'c6\'bd
+\f2 )
+\f0 \'a1\'a3
+\f1\fs28 \cf0 \
+\ls2\ilvl0
+\f2\fs30 \cf8 {\listtext	\'95	}AREAD( analogPin )
+\f0 \'a3\'ba\'b6\'c1\'c8\'a1\'b5\'da
+\f2 analogPin
+\f0 \'c4\'a3\'c4\'e2\'d2\'fd\'bd\'c5\'b5\'c4\'d6\'b5
+\f2  (0~1023
+\f0 \'d6\'ae\'bc\'e4
+\f2 )
+\f0 \'a1\'a3
+\f1\fs28 \cf0 \
+\pard\pardeftab720
+
+\f0 \cf8 \'ba\'f3\'bc\'c7\'a3\'ba
+\f1 \cf0 \
+\cf8 	
+\f0 \'b5\'b1\'ca\'b1\'d4\'da\'bf\'bc\'c2\'c7\'bc\'d3\'bb\'ad\'cd\'bc\'c3\'fc\'c1\'ee\'ca\'b1\'d3\'d0\'c1\'bd\'d6\'d6\'b7\'bd\'b0\'b8\'a3\'ac\'b3\'fd\'c1\'cb\'b5\'b1\'c7\'b0\'ca\'b9\'d3\'c3\'b5\'c4\'b7\'bd\'b0\'b8\'cd\'e2\'a3\'ac\'c1\'ed\'d2\'bb\'d6\'d6\'bf\'c9\'d1\'a1\'b7\'bd\'b0\'b8\'ca\'c7\'a3\'ba
+\f1 \cf0 \
+\cf8 	
+\f0 \'a3\'a8
+\f1 1
+\f0 \'a3\'a9\'c8\'d4\'c8\'bb\'ca\'b9\'d3\'c3\'c9\'cf\'c6\'c1\'d7\'f7\'ce\'aa\'d6\'f7\'d6\'d5\'b6\'cb\'c6\'c1\'c4\'bb\'a3\'ac\'b5\'b1\'d6\'b4\'d0\'d0\'b5\'bd\'bb\'ad\'cd\'bc\'c3\'fc\'c1\'ee\'ca\'b1\'c9\'cf\'c6\'c1\'d7\'d4\'b6\'af\'c7\'d0\'bb\'bb\'b5\'bd\'bb\'ad\'cd\'bc\'d7\'b4\'cc\'ac\'a3\'a8\'d3\'c9\'d3\'da
+\f1 NDS
+\f0 \'d3\'b2\'bc\'fe\'d4\'ad\'d2\'f2\'a3\'ac\'cd\'ac\'d2\'bb\'c6\'c1\'c4\'bb\'bb\'ad\'cd\'bc\'d7\'b4\'cc\'ac\'ba\'cd\'cf\'d4\'d6\'d5\'b6\'cb\'d7\'b4\'cc\'ac\'b2\'bb\'bf\'c9\'cd\'ac\'ca\'b1\'b4\'e6\'d4\'da\'a3\'a9\'a1\'a3\'cf\'c2\'c6\'c1\'c8\'ed\'bc\'fc\'c5\'cc\'c9\'cf\'b7\'bd
+\f1 14
+\f0 \'d0\'d0\'d6\'bb\'d3\'c3\'d3\'da\'cf\'d4\'ca\'be\'d3\'eb
+\f1 Arduino
+\f0 \'b5\'c4
+\f1 SPI
+\f0 \'cd\'a8\'d0\'c5\'b5\'c4\'ca\'fd\'be\'dd\'a3\'a8\'b7\'a2\'cb\'cd\'ba\'cd\'bd\'d3\'ca\'d5\'ca\'fd\'be\'dd\'a3\'a9\'a3\'ac\'b2\'bb\'d7\'f7\'cb\'fb\'d3\'c3\'a1\'a3
+\f1 \cf0 \
+\
+
+\f0 \cf8 \'b1\'be\'c6\'aa\'bd\'e1\'ca\'f8\'a3\'ac\'ba\'f3\'c3\'e6\'bd\'ab\'bb\'e1\'c9\'e6\'bc\'b0
+\f1 Arduino
+\f0 \'b6\'cb\'be\'df\'cc\'e5\'b5\'c4
+\f1 SPI
+\f0 \'cd\'a8\'d0\'c5\'b4\'fa\'c2\'eb\'c9\'e8\'bc\'c6\'d3\'eb\'b1\'e0\'d0\'b4\'a1\'a3}

@@ -1,0 +1,58 @@
+#ifndef _SPI_COMMS_H_
+#define _SPI_COMMS_H_ 1
+/*
+ * $Id$
+ *
+ * libspi
+ *
+ * Ben Jaques <masscat@btinternet.com>
+ *
+ * Modifications by Jos Hendriks <jos@circuitdb.com>
+ */
+
+/** The mask inidicating if a byte is a command byte */
+#define SPI_COMMAND_FLAG_MASK 0xf8
+
+/** The value of the SPI command flag bits */
+#define SPI_COMMAND_FLAG_VALUE 0xf8
+
+/** The mask to give the command */
+#define SPI_COMMAND_MASK 0x07
+
+
+/*
+ * Some helpful macros.
+ */
+/** Make a command byte */
+#define MAKE_SPI_COMMAND( command) (SPI_COMMAND_FLAG_VALUE | (command))
+
+/** Test if a byte is a spi command */
+#define IS_SPI_COMMAND( byte) (((byte) & SPI_COMMAND_FLAG_MASK) == SPI_COMMAND_FLAG_VALUE)
+
+/** Get the command from a command byte */
+#define GET_SPI_COMMAND( byte) ((byte) & SPI_COMMAND_MASK)
+
+
+/*
+ * The command values
+ */
+/** The idle command - ignore these (this gives an all ones byte which
+ * is what the DS gets if nothing is on the other side of the SPI bus) */
+#define SPI_COMMAND_IDLE 0x7
+
+/** Next byte is inverted data */
+#define SPI_COMMAND_INVERTED_BYTE 0x6
+
+/** Stop sending data command (data flow off) */
+#define SPI_COMMAND_STOP_DATA 0x5
+
+/** Resume sending data command (data flow on) */
+#define SPI_COMMAND_RESUME_DATA 0x4
+
+/** Request the exected flow status */
+#define SPI_COMMAND_FLOW_REQUEST 0x3
+
+/** The end of a data block */
+#define SPI_COMMAND_END_DATA_BLOCK 0x2
+
+#endif /* End of _SPI_COMMS_H_ */

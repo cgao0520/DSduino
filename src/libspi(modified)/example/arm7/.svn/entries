@@ -1,0 +1,44 @@
+8
+
+dir
+1
+svn://192.168.1.253/var/databackup/svn/ds/libspi/example/arm7
+svn://192.168.1.253/var/databackup/svn/ds/libspi
+
+
+
+2007-01-24T13:23:49.420872Z
+1
+jos
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9126704a-af83-4342-949a-ff26c8199a1e
+
+source
+dir
+
+Makefile
+file
+2
+
+
+
+2007-02-14T20:51:08.968750Z
+3ff5412acac6b405ec9fe5d0559c5d95
+2007-02-14T20:36:39.677147Z
+2
+jos
+has-props
+

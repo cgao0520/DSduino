@@ -1,0 +1,41 @@
+8
+
+dir
+1
+svn://192.168.1.253/var/databackup/svn/ds/libspi/source/src
+svn://192.168.1.253/var/databackup/svn/ds/libspi
+
+
+
+2007-01-24T13:23:49.420872Z
+1
+jos
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9126704a-af83-4342-949a-ff26c8199a1e
+
+spi_driver.c
+file
+
+
+
+
+2007-01-24T18:40:52.890625Z
+fe7924dd964ef23a51e9740be9593184
+2007-01-24T13:23:49.420872Z
+1
+jos
+has-props
+
