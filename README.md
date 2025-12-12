@@ -2,6 +2,8 @@
 # DSduino
 DSduino transforms your Nintendo DS (NDS) to be a handheld computer which can manipulate sensors or control electronic items via BASIC language.
 
+![DSduino](/img/4.jpeg)
+
 ## Intro
 DSduino is one of my projects originally open sourced on SourceForge back in 2014, I'm now move it to my github for better maintainance.
 
@@ -17,7 +19,7 @@ DSduino is an NDS + Arduino + BASIC extension via slot 1 SPI interface. DSduino 
 
 Nintendo DS (Slot 1) <----SPI----> Arduino <----GPIO/I2C, etc----> Peripherals
 
-The Arduino is a minimal system which does not require any electrical components. In this project, I used an Atmel 328p from an Arduino UNO board and reflashed the firmware to allow it running with its internal oscillator under 3.3V rather than 5V, as NDS's SPI is running on 3.3V. Technically, you are totally fine to use any 3.3V Arduino board, e.g., Arduino mini.  
+The Arduino is a minimal system which does not require any electrical components. In this project, I used an Atmel 328p from an Arduino UNO board and reflashed the bootloader to allow it running with its internal oscillator under 3.3V rather than 5V, as NDS's SPI is running on 3.3V. Technically, you are totally fine to use any 3.3V Arduino board, e.g., Arduino mini.  
 
 ## Software
 
@@ -29,6 +31,9 @@ The Arduino is a minimal system which does not require any electrical components
 
 ## Documents /  Articles
 
-Back to 2014, I have written 7 articles to document the whole design and procedure about how I did the project and eventually won the Best Techincal Award on 2nd Atmel Open Source Competition, check the doc folder for these articles. These articles were also published on a Chinese Journal, called "无线电". However, all these articles and documents were written in Chinese, and I don't have a plan to translate them into other languages. While you may use AI to do the translation for you as they do such work very well. Or, you may contact me via email too.
+Back to 2014, I have written 7 articles to document the whole design and progress of the project and eventually won the Best Techincal Award in 2nd Atmel Open Source Competition. Check the doc folder for these articles that were also published on a Chinese Journal, called "无线电". However, all these articles were written in Chinese, and I don't have a plan to translate them into other languages. Well, you may use AI to do the translation for you as they do such work very well. Or, you may contact me via email too if you have any questions.
 
 Note: most of the documents/articles are in .rtfd format, which is fine on Mac OS, so if you are on Windows or Linux, just open the TXT.rtf file in the folder.
+
+## Demo Video
+[Check this link for video demo](https://v.youku.com/v_show/id_XNzg1ODg4NzEy.html?spm=a2hkm.8166622.PhoneSokuUgc_1.dscreenshot&playMode=pugv&frommaciku=1). Be aware of long and annoying ad, I may re-edit the video and upload to Youtube once have time.
