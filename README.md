@@ -36,4 +36,7 @@ Back to 2014, I have written 7 articles to document the whole design and progres
 Note: most of the documents/articles are in .rtfd format, which is fine on Mac OS, so if you are on Windows or Linux, just open the TXT.rtf file in the folder.
 
 ## Demo Video
-[Check this link for video demo](https://v.youku.com/v_show/id_XNzg1ODg4NzEy.html?spm=a2hkm.8166622.PhoneSokuUgc_1.dscreenshot&playMode=pugv&frommaciku=1). Be aware of long and annoying ad, I may re-edit the video and upload to Youtube once have time.
+[Check this link for video demo](https://www.youtube.com/watch?v=gw4SA426inc). This is re-editted video with English captions and uploaded to youtube.
+
+The original video for the aforementioned compitetion is
+[Original video](https://v.youku.com/v_show/id_XNzg1ODg4NzEy.html?spm=a2hkm.8166622.PhoneSokuUgc_1.dscreenshot&playMode=pugv&frommaciku=1). Be aware of long and annoying ad.
